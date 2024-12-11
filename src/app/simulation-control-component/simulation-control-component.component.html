@@ -1,0 +1,11 @@
+<div class="button-group">
+  <button mat-raised-button color="primary" (click)="startSimulation()">Start Simulation</button>
+  <button mat-raised-button color="warn" (click)="stopSimulation()">Stop Simulation</button>
+</div>
+
+<div *ngIf="logMessages.length > 0" class="log-container">
+  <h3>Log Messages</h3>
+  <ul>
+    <li *ngFor="let message of logMessages">{{ message }}</li>
+  </ul>
+</div>

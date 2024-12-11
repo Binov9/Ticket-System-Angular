@@ -1,0 +1,48 @@
+<h2 class="form-title">Set Configurations</h2>
+<form (submit)="saveConfigurations()" class="config-form">
+  <div class="form-group">
+    <mat-label for="ticketReleaseRate">Ticket Release Rate:</mat-label>
+    <mat-form-field>
+      <input matInput id="ticketReleaseRate" [(ngModel)]="configurations.ticketReleaseRate" name="ticketReleaseRate" required />
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-label for="customerRetrievalRate">Customer Retrieval Rate:</mat-label>
+    <mat-form-field>
+      <input matInput id="customerRetrievalRate" [(ngModel)]="configurations.customerRetrievalRate" name="customerRetrievalRate" required />
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-label for="totalTickets">Total Tickets:</mat-label>
+    <mat-form-field>
+      <input matInput id="totalTickets" [(ngModel)]="configurations.totalTickets" name="totalTickets" required />
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-label for="maxTicketCapacity">Max Ticket Capacity:</mat-label>
+    <mat-form-field>
+      <input matInput id="maxTicketCapacity" [(ngModel)]="configurations.maxTicketCapacity" name="maxTicketCapacity" required />
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-label for="vendorCount">Vendor Count:</mat-label>
+    <mat-form-field>
+      <input matInput id="vendorCount" [(ngModel)]="configurations.vendorCount" name="vendorCount" required />
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-label for="customerCount">Customer Count:</mat-label>
+    <mat-form-field>
+      <input matInput id="customerCount" [(ngModel)]="configurations.customerCount" name="customerCount" required />
+    </mat-form-field>
+  </div>
+
+  <div class="button-group">
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </div>
+</form>

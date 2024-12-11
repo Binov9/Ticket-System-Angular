@@ -1,0 +1,35 @@
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.log-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
+  max-width: 100vh;
+  margin: 0 auto;
+  font-family: monospace;
+}
+
+.log-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.log-container li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
